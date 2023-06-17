@@ -81,3 +81,6 @@ body{
     border-color: #25baff;
     border-radius: 2rem;
 }
+.photo{
+    display: none;
+}
