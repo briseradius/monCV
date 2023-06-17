@@ -10,7 +10,7 @@
     font-size: 1.1rem;
   }
   .custom-border {
-    background: #2c2615aa;
+    background: #000000aa;
     border: solid;
       border-top-color: currentcolor;
       border-right-color: currentcolor;
@@ -45,4 +45,19 @@
     z-index: -100;
       background-size: auto;
     background-size: cover;
+  }
+  @media screen and (max-width: 720px) {
+
+    .resp{
+      flex-direction: column !important;
+      width: 1070px;
+    }  
+    .size{
+      width: 33% !important;
+   
+    }
+    .head{
+      margin: unset !important;
+      padding: unset !important;
+    }
   }
