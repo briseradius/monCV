@@ -16,8 +16,7 @@ body{
 
 .custom-border-print {
     background: #2c2615aa;
-    border-top: solid;
-    border-bottom: solid;
+    border: solid;
     border-color: #25baff;
     border-radius: 2rem;
 }
@@ -76,8 +75,7 @@ body{
 }
 
 .border-custom {
-    border-right: solid;
-    border-left: solid;
+    border: solid;
     border-color: #25baff;
     border-radius: 2rem;
 }
