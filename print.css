@@ -1,11 +1,19 @@
-h1{
-    font-size: 4em;
+h1{  
+    text-align: center;
+}
+
+h2{
+    font-size: 2em;
 }
 
 img#bgimg {
 display: none;
 }
 
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
 body{
     color:#0f6992;
 }
@@ -82,3 +90,7 @@ body{
 .photo{
     display: none;
 }
+.center{
+    display: grid;
+    place-items: center;   
+  }

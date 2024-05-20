@@ -12,6 +12,10 @@
     color: #ffffff;
     font-size: 1.1rem;
   }
+  .flex{
+    display: flex;
+    justify-content: space-between;
+  }
   .custom-border {
     background: #000000aa;
     border: solid;
@@ -51,6 +55,10 @@
   }
   .social{
     margin-right: 10px;
+  }
+  .center{
+    display: grid;
+    place-items: center;   
   }
   @media screen and (max-width: 720px) {
 
