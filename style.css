@@ -65,7 +65,10 @@
     .resp{
       flex-direction: column !important;
       width: 1070px;
-    }  
+    } 
+    .comp{
+      display: none;
+    } 
     .size{
       width: 33% !important;
    
