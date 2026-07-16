@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @page {
   size: A4 portrait;
   margin: 4mm;
@@ -204,3 +205,101 @@ img,
 .right {
   display: none !important;
 }
+=======
+h1{  
+    text-align: center;
+}
+
+h2{
+    font-size: 2em;
+}
+
+img#bgimg {
+display: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    color:#0f6992;
+}
+
+.progress{
+    display: block;
+}
+
+.custom-border-print {
+    background: #2c2615aa;
+    border: solid;
+    border-color: #25baff;
+    border-radius: 2rem;
+}
+
+.w-10 {
+    width: 10%!important;
+}
+
+.right {
+    display: none;
+    bottom: 4rem;
+    right: 4rem;
+}
+
+/* .social {
+    display:none;
+} */
+
+.little-text {
+    font-size: 0.8em;
+}
+
+.progress {
+    position: relative;
+}
+.progress:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    border-bottom: 2rem solid #eeeeee;
+}
+.progress-bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    border-bottom: 2rem solid #337ab7;
+}
+.bg-success {
+    border-bottom-color: #67c600;
+}
+.bg-info {
+    border-bottom-color: #5bc0de;
+}
+.bg-warning {
+    border-bottom-color: #ff7707;
+}
+.bg-danger {
+    border-bottom-color: #ee2f31;
+}
+
+.border-custom {
+    border: solid;
+    border-color: #25baff;
+    border-radius: 2rem;
+}
+.photo{
+    display: none;
+}
+.center{
+    display: grid;
+    place-items: center;   
+  }
+>>>>>>> e9fcd6e9c6aa1b067a9fb4e74fb2f3ab439ddc6a

@@ -11,9 +11,17 @@
     text-align: left;
     color: #ffffff;
     font-size: 1.1rem;
+<<<<<<< HEAD
     background-image: url("fond.avif");;
   }
 
+=======
+  }
+  .flex{
+    display: flex;
+    justify-content: space-between;
+  }
+>>>>>>> e9fcd6e9c6aa1b067a9fb4e74fb2f3ab439ddc6a
   .custom-border {
     background: #000000aa;
     border: solid;
@@ -39,7 +47,11 @@
     margin-top: 0;
     margin-bottom: .5rem;
   }
+<<<<<<< HEAD
 /* img#bgimg {
+=======
+ img#bgimg {
+>>>>>>> e9fcd6e9c6aa1b067a9fb4e74fb2f3ab439ddc6a
     position: fixed;
     right: 0;
     bottom: 0;
@@ -47,16 +59,37 @@
     min-height: 100%;
     width: auto;
     height: auto;
+<<<<<<< HEAD
     z-index: -10;
       background-size: auto;
     background-size: cover;
   }*/
+=======
+    z-index: -100;
+      background-size: auto;
+    background-size: cover;
+  }
+  .social{
+    margin-right: 10px;
+  }
+  .center{
+    display: grid;
+    place-items: center;   
+  }
+>>>>>>> e9fcd6e9c6aa1b067a9fb4e74fb2f3ab439ddc6a
   @media screen and (max-width: 720px) {
 
     .resp{
       flex-direction: column !important;
       width: 1070px;
+<<<<<<< HEAD
     }  
+=======
+    } 
+    .comp{
+      display: none;
+    } 
+>>>>>>> e9fcd6e9c6aa1b067a9fb4e74fb2f3ab439ddc6a
     .size{
       width: 33% !important;
    
