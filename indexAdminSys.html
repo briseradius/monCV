@@ -2,106 +2,315 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link id="css" href="style.css" type="text/css" rel="stylesheet" media="screen">
-    <link href="print.css" type="text/css" rel="stylesheet" media="print">
-    <title>Mon CV</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>CV de Jeremy Grzymlas</title>
+
+    <!-- Bootstrap 4 -->
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"
+    >
+
+    <!-- CSS pour l'affichage à l'écran -->
+    <link
+        id="css"
+        rel="stylesheet"
+        href="style.css"
+        media="screen"
+    >
+
+    <!-- CSS pour l'impression -->
+    <link
+        rel="stylesheet"
+        href="print.css"
+        media="print"
+    >
 </head>
+
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 ml-5 head">
-                <h2 class="cv center">Jeremy Grzymlas </h2>
-                    <h2 class="cv center">
-                        Administrateur systèmes et réseaux en contrat de professionnalisation
-                    </h2>
+    <main class="container cv-container">
+        <!-- En-tête -->
+        <header class="row">
+            <div class="col-12 head">
+                <h1 class="cv cv-name center">
+                    Jeremy Grzymlas
+                </h1>
+
+                <h2 class="cv cv-title center">
+                    Administrateur systèmes et réseaux en contrat de
+                    professionnalisation
+                </h2>
             </div>
-        </div>
-        <div class="row">
+        </header>
+
+        <!-- Coordonnées -->
+        <section class="row">
             <div class="col-12 custom-border p-3 mb-3 mt-3">
-                <div class="flex">
+                <div class="flex contact-block">
                     <div>
-                        <div><img src="Sans titre.png" alt="icone maison" width="15px"> : 52 ter rue Pierre Demathieu 55100 Verdun</div>
-                        <div><img src="images.png" alt="icone telephone" width="15px"> : 06.79.55.92.93</div>
-                        <div><img src="mail.png" alt="icone mail" width="15px"> : jeremygrzymlas@gmail.com</div>
-                        <div><img src="Sans titre.jpg" alt="icone voiture" width="15px"></i> : Permis B Voiture</div>
-                        <div class="social ">
-                            <a target="_blank" title="Lien vers mon Linkedin" href="http://linkedin.com/in/jeremy-grzymlas-10b782253">
-                                <img src="Sans_titre.png" alt="icone linkedin" width="25px"></a>
-                            <a target="_blank" title="Retrouvez-moi sur GitHub" href="https://github.com/briseradius">
-                                <img src="git.png" alt="icone github" width="25px"></a>
+                        <p>
+                            <img
+                                src="Sans titre.png"
+                                alt="Icône représentant une maison"
+                                width="15"
+                            >
+                            52 ter rue Pierre Demathieu, 55100 Verdun
+                        </p>
+
+                        <p>
+                            <img
+                                src="images.png"
+                                alt="Icône représentant un téléphone"
+                                width="15"
+                            >
+
+                            <a href="tel:+33679559293">
+                                06 79 55 92 93
+                            </a>
+                        </p>
+
+                        <p>
+                            <img
+                                src="mail.png"
+                                alt="Icône représentant une adresse e-mail"
+                                width="15"
+                            >
+
+                            <a href="mailto:jeremygrzymlas@gmail.com">
+                                jeremygrzymlas@gmail.com
+                            </a>
+                        </p>
+
+                        <p>
+                            <img
+                                src="Sans titre.jpg"
+                                alt="Icône représentant une voiture"
+                                width="15"
+                            >
+                            Permis B – Véhicule personnel
+                        </p>
+
+                        <div class="social">
+                            <a
+                                href="https://linkedin.com/in/jeremy-grzymlas-10b782253"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Voir mon profil LinkedIn"
+                            >
+                                <img
+                                    src="Sans_titre.png"
+                                    alt="Logo LinkedIn"
+                                    width="25"
+                                >
+                            </a>
+
+                            <a
+                                href="https://github.com/briseradius"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Voir mon profil GitHub"
+                            >
+                                <img
+                                    src="git.png"
+                                    alt="Logo GitHub"
+                                    width="25"
+                                >
+                            </a>
                         </div>
                     </div>
-                    <img src="photo.png" alt="photo visage" width="105px" height="auto">
+
+                    <img
+                        class="photo"
+                        src="photo.png"
+                        alt="Portrait de Jeremy Grzymlas"
+                        width="105"
+                    >
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12 custom-border custom-border-print p-3 mb-3">
-                <p>Passionné par le domaine de l'administration système, je suis actuellement à la recherche d'une alternance pour ma licence en Administration Système. Avec une expérience en développement web et une forte capacité d'apprentissage, je suis prêt à contribuer efficacement à votre équipe.</p>
+        </section>
+
+        <!-- Présentation -->
+        <section class="row">
+            <div
+                class="col-12 custom-border custom-border-print profile-block p-3 mb-3"
+            >
+                <p>
+                    Passionné par l’administration des systèmes et des réseaux,
+                    je suis actuellement à la recherche d’une alternance dans le
+                    cadre de ma formation d’administrateur systèmes et réseaux.
+                    Mon expérience en développement Web et ma capacité
+                    d’apprentissage me permettent de m’adapter rapidement et de
+                    contribuer efficacement au travail d’une équipe technique.
+                </p>
             </div>
-        </div>
+        </section>
+
         <div class="row resp">
-            <div class="col-4 custom-border p-3 border-custom resp">
-                <h2>Compétences</h2>
+            <!-- Colonne de gauche -->
+            <aside
+                class="col-md-4 custom-border p-3 border-custom left-column"
+            >
+                <section>
+                    <h2>Compétences</h2>
+
                     <ul>
                         <li>Communication efficace</li>
                         <li>Résolution de problèmes</li>
-                        <li>Travail d'équipe</li>
+                        <li>Travail en équipe</li>
                         <li>Gestion du temps</li>
                         <li>Adaptabilité</li>
                         <li>Esprit analytique</li>
                         <li>Autonomie</li>
                         <li>Esprit critique</li>
                     </ul>
-                
-                <h2>Langues</h2>
-                <div>
-                    <p><strong>Français: </strong>Langue maternelle</p> 
-                    <p><strong>Anglais: </strong>Ecrit bon niveau,</br> Oral intermediaire</p>                    
-                    <p><strong>Anglais technique: </strong>niveau intermédiaire</p> 
-                    
-                </div>
+                </section>
+
+                <section>
+                    <h2>Langues</h2>
+
+                    <p>
+                        <strong>Français :</strong>
+                        langue maternelle
+                    </p>
+
+                    <p>
+                        <strong>Anglais :</strong>
+                        bon niveau écrit<br>
+                        niveau oral intermédiaire
+                    </p>
+
+                    <p>
+                        <strong>Anglais technique :</strong>
+                        niveau intermédiaire
+                    </p>
+                </section>
+
                 <div class="center">
-                    <img class="center mt-5" src="mewo_campus.jpg" alt="logo mewo" width="250px" height="auto"> 
+                    <img
+                        class="photo mt-5"
+                        src="mewo_campus.jpg"
+                        alt="Logo du campus MEWO"
+                        width="250"
+                    >
                 </div>
-            </div>
-            <div class="col-8 custom-border p-3 border-left-custom size">
-                <h2>Formations / Diplômes</h2>
-                    <ul>
-                        <li>Administrateur systèmes et réseaux Titre RNCP niveau 6 en contrat de professionnalisation (Campus MEWO Metz) 09.2024 / 06.2025</li>
-                        <li>Titre professionnel (DUT) de développeur Web et Web mobile (Alaji 2023)</li>
-                            <ul>
-                                <li>Développeur PHP, Javascript, Typescript</li>
-                            </ul>
-                        <li>CQP SSIAP (Afpa 2016)</li>
-                        <li>Diplôme de commerce niveau III (CCI Meuse 2009)</li>
-                        <li>Baccalauréat restauration option cuisine (LPR Alain Fournier Verdun)</li>
-                    </ul>
-                <h2>Expériences Professionnelles</h2>
+            </aside>
+
+            <!-- Colonne de droite -->
+            <section
+                class="col-md-8 custom-border p-3 border-left-custom size right-column"
+            >
+                <h2>Formations et diplômes</h2>
+
+                <ul class="formation-list">
+                    <li>
+                        Administrateur systèmes et réseaux, titre RNCP de
+                        niveau 6, en contrat de professionnalisation – Campus
+                        MEWO, Metz, de septembre 2024 à juin 2025
+                    </li>
+
+                    <li>
+                        Titre professionnel Développeur Web et Web mobile,
+                        niveau 5 – ALAJI, 2023
+
+                        <ul>
+                            <li>
+                                Développement avec PHP, JavaScript et TypeScript
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        CQP SSIAP – AFPA, 2016
+                    </li>
+
+                    <li>
+                        Diplôme de commerce de niveau III – CCI Meuse, 2009
+                    </li>
+
+                    <li>
+                        Baccalauréat professionnel restauration, option cuisine
+                        – LPR Alain-Fournier, Verdun
+                    </li>
+                </ul>
+
+                <h2>Expériences professionnelles</h2>
+
                 <ul>
-                    <li>Stage de 11 semaines SARL OTTERLY (2023)</li>
-                    <ul>
-                        <li class="little-text">Développement d'un bot discord en Typescript/NestJS</li>
-                        <li class="little-text">Création d'un site avec PHP et JS</li>
-                    </ul>
-                        <li>Agent de sécurité Groupe SGP Lorraine (2019 - 2021)</li>
-                        <li>Agent de sécurité Securitas (2017 - 2019)</li>
-                        <li>Agent de sécurité Brink's Luxembourg (2016 - 2017)</li>
-                        <li>Agent pontier VNF (canal des Vosges) (2014 - 2015)</li>
-                        <li>Commercial en produits chimiques (2010 - 2012)</li>
-                        <li>Vendeur blanc/brun (2009 - 2010)</li>
-                        <li>Cuisinier (2005 - 2009)</li>
-                    </ul>
-                <h2>Qualités Personnelles</h2>
-                    <p>Honnêteté, Respect, Camaraderie, Challenge, Autonomie, Engagement, Fiabilité, Lucidité</p>
-                <h2>Centres d'Intérêts</h2>
-                    <p>Informatique, Science, Musique, Théâtre, Cinéma</p>
-            </div>
+                    <li class="experience-item">
+                        Stage de 11 semaines – SARL OTTERLY, 2023
+
+                        <ul>
+                            <li class="little-text">
+                                Développement d’un bot Discord avec TypeScript
+                                et NestJS
+                            </li>
+
+                            <li class="little-text">
+                                Création d’un site Web avec PHP et JavaScript
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        Agent de sécurité – Groupe SGP Lorraine, 2019-2021
+                    </li>
+
+                    <li>
+                        Agent de sécurité – Securitas, 2017-2019
+                    </li>
+
+                    <li>
+                        Agent de sécurité – Brink’s Luxembourg, 2016-2017
+                    </li>
+
+                    <li>
+                        Agent pontier – Voies navigables de France, canal des
+                        Vosges, 2014-2015
+                    </li>
+
+                    <li>
+                        Commercial en produits chimiques, 2010-2012
+                    </li>
+
+                    <li>
+                        Vendeur en produits blancs et bruns, 2009-2010
+                    </li>
+
+                    <li>
+                        Cuisinier, 2005-2009
+                    </li>
+                </ul>
+
+                <h2>Qualités personnelles</h2>
+
+                <p>
+                    Honnêteté, respect, esprit d’équipe, autonomie,
+                    adaptabilité, engagement, fiabilité et lucidité.
+                </p>
+
+                <h2>Centres d’intérêt</h2>
+
+                <p>
+                    Informatique, sciences, musique, théâtre et cinéma.
+                </p>
+            </section>
         </div>
-    </div>
-    <img src="fond.jpeg" id="bgimg" alt="informatique serveur">
+    </main>
+
+    <img
+        src="fond.jpeg"
+        id="bgimg"
+        alt=""
+        aria-hidden="true"
+    >
 </body>
 </html>

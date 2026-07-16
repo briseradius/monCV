@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @page {
   size: A4 portrait;
   margin: 4mm;
@@ -10,16 +9,21 @@
   text-shadow: none !important;
 }
 
+html,
 body {
-  background: white !important;
-  color: #111 !important;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body {
+  background: #ffffff !important;
+  color: #111111 !important;
   font-size: 16px !important;
   line-height: 1.5 !important;
-  margin: 0 !important;
-  transform: scale(1.12);
-  transform-origin: top left;
-  width: 89%;
 }
+
+/* Conteneur principal */
 
 .container,
 .cv-container {
@@ -38,77 +42,94 @@ body {
   padding-right: 0 !important;
 }
 
-.custom-border {
-  background: white !important;
-  color: #111 !important;
-  border: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
-  margin-bottom: 10px !important;
-}
+/* En-tête */
 
 .head {
-  background: #123047 !important;
-  color: white !important;
-  text-align: center !important;
-  padding: 18px !important;
   margin-bottom: 14px !important;
+  padding: 18px !important;
+  color: #ffffff !important;
+  text-align: center !important;
+  background-color: #123047 !important;
+
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
 }
 
+.cv,
 .cv-name {
-  font-size: 42px !important;
-  color: white !important;
   margin: 0 !important;
+  color: #ffffff !important;
+  font-size: 42px !important;
   font-weight: 700 !important;
+  text-align: center !important;
 }
 
 .cv-title {
-  font-size: 25px !important;
-  color: #25baff !important;
   margin: 5px 0 !important;
+  color: #25baff !important;
+  font-size: 25px !important;
+  text-align: center !important;
 }
 
 .cv-subtitle {
-  font-size: 14px !important;
-  color: white !important;
   margin: 0 !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  text-align: center !important;
+}
+
+/* Blocs principaux */
+
+.custom-border,
+.custom-border-print {
+  margin-bottom: 10px !important;
+  padding: 0 !important;
+  color: #111111 !important;
+  background: #ffffff !important;
+  border: none !important;
+  border-radius: 0 !important;
 }
 
 .contact-block {
   display: grid !important;
   grid-template-columns: repeat(3, 1fr) !important;
   gap: 6px 20px !important;
-  font-size: 13px !important;
-  border-bottom: 1px solid #ccc !important;
-  padding-bottom: 10px !important;
+
   margin-bottom: 14px !important;
+  padding-bottom: 10px !important;
+
+  font-size: 13px !important;
+  border-bottom: 1px solid #cccccc !important;
 }
 
 .profile-block {
-  border-left: 4px solid #25baff !important;
-  padding-left: 14px !important;
   margin-bottom: 14px !important;
+  padding-left: 14px !important;
+  border-left: 4px solid #25baff !important;
 }
 
 .profile-block p {
-  font-size: 15px !important;
   margin: 0 !important;
+  font-size: 15px !important;
 }
+
+/* Colonnes du CV */
 
 .row.resp {
   display: flex !important;
   flex-direction: row !important;
   align-items: flex-start !important;
-  gap: 22px !important;
+
   width: 100% !important;
+  gap: 22px !important;
 }
 
-.row.resp > .left-column {
+.row.resp > .left-column,
+.row.resp > .comp {
   width: 32% !important;
   max-width: 32% !important;
   flex: 0 0 32% !important;
+
   padding-right: 15px !important;
   border-right: 1px solid #d0d0d0 !important;
 }
@@ -118,6 +139,7 @@ body {
   width: calc(68% - 22px) !important;
   max-width: calc(68% - 22px) !important;
   flex: 0 0 calc(68% - 22px) !important;
+
   padding-left: 14px !important;
 }
 
@@ -125,23 +147,36 @@ body {
   margin-bottom: 14px !important;
 }
 
-h1, h2, h3 {
+/* Titres */
+
+h1,
+h2,
+h3 {
+  break-after: avoid !important;
   page-break-after: avoid !important;
 }
 
+h1 {
+  text-align: center !important;
+}
+
 h2 {
-  font-size: 21px !important;
-  color: #0f6992 !important;
-  border-bottom: 1px solid #25baff !important;
-  padding-bottom: 4px !important;
   margin: 12px 0 7px !important;
+  padding-bottom: 4px !important;
+
+  color: #0f6992 !important;
+  font-size: 21px !important;
+
+  border-bottom: 1px solid #25baff !important;
 }
 
 h3 {
-  font-size: 16px !important;
-  color: #111 !important;
   margin: 0 0 5px !important;
+  color: #111111 !important;
+  font-size: 16px !important;
 }
+
+/* Textes et listes */
 
 p {
   margin: 0 0 7px !important;
@@ -157,8 +192,8 @@ li {
 }
 
 .clean-list {
-  list-style: none !important;
   padding-left: 0 !important;
+  list-style: none !important;
 }
 
 .clean-list li::before {
@@ -167,139 +202,147 @@ li {
   font-weight: bold !important;
 }
 
-.tags span {
-  display: inline-block !important;
-  border: 1px solid #aaa !important;
-  border-radius: 4px !important;
-  padding: 5px 7px !important;
-  margin: 0 5px 6px 0 !important;
-  font-size: 12px !important;
-}
-
-.experience-item {
-  margin-bottom: 11px !important;
-  page-break-inside: avoid !important;
-}
-
-.date {
-  font-size: 13px !important;
-  color: #444 !important;
-  font-weight: bold !important;
+.little-text {
+  font-size: 0.8em !important;
 }
 
 .formation-list li {
   margin-bottom: 7px !important;
 }
 
+.experience-item {
+  margin-bottom: 11px !important;
+
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+.date {
+  color: #444444 !important;
+  font-size: 13px !important;
+  font-weight: bold !important;
+}
+
+/* Étiquettes */
+
+.tags span {
+  display: inline-block !important;
+
+  margin: 0 5px 6px 0 !important;
+  padding: 5px 7px !important;
+
+  font-size: 12px !important;
+
+  border: 1px solid #aaaaaa !important;
+  border-radius: 4px !important;
+}
+
+/* Liens */
+
 a {
-  color: #111 !important;
+  color: #111111 !important;
   text-decoration: none !important;
 }
+
+/* Barres de progression imprimables */
+
+.progress {
+  position: relative !important;
+  display: block !important;
+
+  width: 100% !important;
+  height: 10px !important;
+  margin-bottom: 7px !important;
+
+  overflow: hidden !important;
+  background-color: #eeeeee !important;
+  border-radius: 4px !important;
+
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.progress-bar {
+  position: relative !important;
+  display: block !important;
+
+  height: 100% !important;
+
+  border: none !important;
+  background-color: #337ab7 !important;
+
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.progress-bar.bg-success {
+  background-color: #67c600 !important;
+}
+
+.progress-bar.bg-info {
+  background-color: #5bc0de !important;
+}
+
+.progress-bar.bg-warning {
+  background-color: #ff7707 !important;
+}
+
+.progress-bar.bg-danger {
+  background-color: #ee2f31 !important;
+}
+
+/* Classes de largeur */
+
+.w-5 {
+  width: 5% !important;
+}
+
+.w-10 {
+  width: 10% !important;
+}
+
+.w-25 {
+  width: 25% !important;
+}
+
+.w-35 {
+  width: 35% !important;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.w-55 {
+  width: 55% !important;
+}
+
+.w-60 {
+  width: 60% !important;
+}
+
+.w-75 {
+  width: 75% !important;
+}
+
+.w-85 {
+  width: 85% !important;
+}
+
+.w-90 {
+  width: 90% !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+/* Éléments masqués à l’impression */
 
 img,
 .photo,
 .social,
-.progress,
-.progress-bar,
 #bgimg,
 .right {
   display: none !important;
 }
-=======
-h1{  
-    text-align: center;
-}
-
-h2{
-    font-size: 2em;
-}
-
-img#bgimg {
-display: none;
-}
-
-.flex{
-    display: flex;
-    justify-content: space-between;
-}
-body{
-    color:#0f6992;
-}
-
-.progress{
-    display: block;
-}
-
-.custom-border-print {
-    background: #2c2615aa;
-    border: solid;
-    border-color: #25baff;
-    border-radius: 2rem;
-}
-
-.w-10 {
-    width: 10%!important;
-}
-
-.right {
-    display: none;
-    bottom: 4rem;
-    right: 4rem;
-}
-
-/* .social {
-    display:none;
-} */
-
-.little-text {
-    font-size: 0.8em;
-}
-
-.progress {
-    position: relative;
-}
-.progress:before {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-    border-bottom: 2rem solid #eeeeee;
-}
-.progress-bar {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    border-bottom: 2rem solid #337ab7;
-}
-.bg-success {
-    border-bottom-color: #67c600;
-}
-.bg-info {
-    border-bottom-color: #5bc0de;
-}
-.bg-warning {
-    border-bottom-color: #ff7707;
-}
-.bg-danger {
-    border-bottom-color: #ee2f31;
-}
-
-.border-custom {
-    border: solid;
-    border-color: #25baff;
-    border-radius: 2rem;
-}
-.photo{
-    display: none;
-}
-.center{
-    display: grid;
-    place-items: center;   
-  }
->>>>>>> e9fcd6e9c6aa1b067a9fb4e74fb2f3ab439ddc6a
