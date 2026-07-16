@@ -11,7 +11,9 @@
     text-align: left;
     color: #ffffff;
     font-size: 1.1rem;
+    background-image: url("fond.avif");;
   }
+
   .custom-border {
     background: #000000aa;
     border: solid;
@@ -37,7 +39,7 @@
     margin-top: 0;
     margin-bottom: .5rem;
   }
- img#bgimg {
+/* img#bgimg {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -45,10 +47,10 @@
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -100;
+    z-index: -10;
       background-size: auto;
     background-size: cover;
-  }
+  }*/
   @media screen and (max-width: 720px) {
 
     .resp{
